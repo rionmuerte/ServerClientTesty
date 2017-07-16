@@ -15,7 +15,7 @@ int main()
 	}
 	SOCKADDR_IN addr;
 	int addrlen = sizeof(addr);
-	addr.sin_addr.s_addr = inet_addr("192.168.0.9");
+	addr.sin_addr.s_addr = inet_addr("62.122.236.57");
 	addr.sin_port = htons(1111);
 	addr.sin_family = AF_INET;
 
