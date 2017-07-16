@@ -16,7 +16,7 @@ int main()
 
 	SOCKADDR_IN addr;
 	int addrlen = sizeof(addr);
-	addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+	addr.sin_addr.s_addr = inet_addr("192.168.0.109");
 	addr.sin_port = htons(1111);
 	addr.sin_family = AF_INET;
 
@@ -32,7 +32,7 @@ int main()
 	else
 	{
 		cout << "Client connected" << endl;
-		char message[256] = "Welcome bro!!! you are connected now!!!";
+		char message[256] = "Dziala?????";
 		send(newConnection, message, sizeof(message), NULL);
 	}
 	system("PAUSE");

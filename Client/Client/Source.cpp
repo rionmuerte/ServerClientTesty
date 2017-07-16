@@ -18,7 +18,7 @@ int main()
 	addr.sin_addr.s_addr = inet_addr("62.122.236.57");
 	addr.sin_port = htons(1111);
 	addr.sin_family = AF_INET;
-
+	
 	SOCKET Connection = socket(AF_INET, SOCK_STREAM, NULL);
 	if (connect(Connection, (SOCKADDR*)&addr, sizeof(addr)) != 0)
 	{
