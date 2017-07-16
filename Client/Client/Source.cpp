@@ -25,7 +25,9 @@ int main()
 		MessageBoxA(NULL, "Failed to connect", "Error", MB_OK | MB_ICONERROR);
 		return 0;
 	}
-	cout << "Connected" << endl;
+	char message[256];
+	recv(Connection, message, sizeof(message), NULL);
+	cout << message << endl;
 	system("PAUSE");
 
 	return 0;

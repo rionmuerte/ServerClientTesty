@@ -32,6 +32,8 @@ int main()
 	else
 	{
 		cout << "Client connected" << endl;
+		char message[256] = "Welcome bro!!! you are connected now!!!";
+		send(newConnection, message, sizeof(message), NULL);
 	}
 	system("PAUSE");
 	return 0;
